@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-print('abcdefghijklmnopqrstuvwxyz', end = "")
+for i in range (26):
+    alp = chr(ord('a') + i)
+    print("{}".format(alp), end = "")
