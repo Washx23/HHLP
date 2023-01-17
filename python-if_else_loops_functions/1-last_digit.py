@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-p = int(str(number)[-1])
+p = int(repr(number)[-1])
 if p == 0:
     print(f'Last digit of {number} is {p} and is 0')
 elif number < -1:
