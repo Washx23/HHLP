@@ -3,8 +3,8 @@ import random
 number = random.randint(-10000, 10000)
 if number < 0:
     p = number
-    p *= -1 
-    p %= 10 
+    p *= -1
+    p %= 10
     p *= -1
 else:
     p = number % 10
