@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def print_last_digit(number):
     if number < 0:
         p = number
@@ -9,4 +9,3 @@ def print_last_digit(number):
         p = number
         p %= 10
     print("{}".format(p))
-    
