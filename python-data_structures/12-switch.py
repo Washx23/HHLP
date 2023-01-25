@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-a,b,p = 89,10,0 
-p = a
-a = b
-b = p
+a,b = 89,10 
+a,b = b,a
 print("a={:d} - b={:d}".format(a, b))
