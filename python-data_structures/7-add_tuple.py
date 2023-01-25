@@ -13,13 +13,12 @@ def add_tuple(tuple_a=(), tuple_b=()):
         p = tuple(apl)
         recu = add_tuple(tuple_b, p)
         return recu
-    if len(tuple_b) < 2:
+    if len(tuple_b) > 2 and len(tuple_a) > 2:
         apl = list(tuple_b)
-        apl = tuple(apl[:1])
-        return apl
-    if len(tuple_a) < 2:
-        apl = list(tuple_a)
-        apl = tuple(apl[:1])
-        return apl
+        cp = list(tuple_a)
+        apl = tuple(apl[:2])
+        cp = tuple(cp[:2])
+        recu = add_tuple(apl, cp)
+        return recu
     new_tuple = tuple([a + b for a, b in (zip(tuple_a, tuple_b))])    
     return new_tuple
