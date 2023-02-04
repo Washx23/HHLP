@@ -5,9 +5,8 @@ function that prints a text with 2 new lines after each of these characters: ., 
 
 def text_indentation(text):
     """ function"""
-    if type(text)==str:
-        text = text.replace("?", "?\n\n")
-        text = text.replace(".", ".\n\n")
-        text = text.replace(":", ":\n\n")
-        text = text.replace("\n ", "\n")
-        print(text.rstrip())
+    if type(text) != str:
+        raise TypeError("text must be a string")
+    for iterable in "?.:":
+        text = (iterable + "\n\n").join(([record.strip(" ") for record in text.split(iterable)]))
+    print("{}".format(text), end="")
