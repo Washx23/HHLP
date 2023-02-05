@@ -4,13 +4,14 @@
 
 class Square:
     """Square"""
-    def __init__(self, __size= 0):
-        """"Square"""
-        if __size < 0:
+    def __init__(self, size=0):
+        """__init__"""
+        if int(size) < 0:
             raise ValueError("size must be >= 0")
-        if type(__size) != int:
-            raise TypeError("size must be an integer") 
-        self.__size = __size
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        self.__size = size
+
     def area(self):
         """area"""
         return self.__size * self.__size
