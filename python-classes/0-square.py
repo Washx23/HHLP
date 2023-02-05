@@ -5,7 +5,5 @@ doc
 
 
 class Square:
-    """
-    class Square
-    """
+    """Square"""
     pass
