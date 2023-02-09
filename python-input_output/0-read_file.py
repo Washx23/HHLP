@@ -5,4 +5,4 @@ def read_file(filename=""):
     """ read_file func """
     with open(filename) as f:
         new_line = f.read()
-        print(new_line)
+        print(new_line, end="")
