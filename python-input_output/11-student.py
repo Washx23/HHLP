@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """ main """
 
 
@@ -19,4 +18,6 @@ class Student:
             return new_list
 
     def reload_from_json(self, json):
+        if json == {}:
+            return
         self.__dict__ = json
