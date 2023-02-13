@@ -86,10 +86,12 @@ class Rectangle(Base):
         return f'[Rectangle] ({self.id}) {self.__x}/{self.__y} \
 - {self.__width}/{self.__height}'
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update Rectangle """
-        new_list = [
-            "id", "width", "height", "x", "y"
-        ]
-        for k, v in zip(new_list, args):
-            setattr(self, k, v)
+        if args:
+            new_list = ["id", "width", "height", "x", "y"]
+            for k, v in zip(new_list, args):
+                setattr(self, k, v)
+        else:
+            for c, p in kwargs.items():
+                setattr(self, c, p)
