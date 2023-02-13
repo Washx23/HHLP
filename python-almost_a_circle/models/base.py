@@ -3,6 +3,7 @@
 
 
 class Base:
+    """ first base class """
     
     __nb_objects = 0
 
