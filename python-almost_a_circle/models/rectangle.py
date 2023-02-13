@@ -87,6 +87,7 @@ class Rectangle(Base):
 - {self.__width}/{self.__height}'
 
     def update(self, *args):
+        """ update Rectangle """
         new_list = [
             "id", "width", "height", "x", "y"
         ]
