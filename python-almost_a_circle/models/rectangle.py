@@ -77,7 +77,7 @@ class Rectangle(Base):
             if i is not (self.__height):
                 new_str += "\n"
         print(new_str)
-
+    
     def __str__(self):
-        return f'[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
-            {self.__width}/{self.__height}'
+        return f'[Rectangle] ({self.id})\
+            {self.__x}/{self.__y} - {self.__width}/{self.__height}'
