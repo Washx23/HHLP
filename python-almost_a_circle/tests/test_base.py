@@ -6,8 +6,8 @@ import unittest
 from models.base import Base
 
 
-class testbase(unittest.TestCase):
-    """Class test base"""
+class test_base(unittest.TestCase):
+    """test base"""
 
     def test_id(self):
         data = Base()
@@ -22,8 +22,8 @@ class testbase(unittest.TestCase):
         self.assertEqual(data.id, 89)
 
 
-class testsNumber(unittest.TestCase):
-    """Tests number"""
+class tests_edgecase(unittest.TestCase):
+    """ede cases"""
     def setUp(self):
         self.data = Base(89)
     def test_1(self):
