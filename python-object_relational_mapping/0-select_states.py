@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""SQL start"""
+
+
 import MySQLdb
 import sys
 
